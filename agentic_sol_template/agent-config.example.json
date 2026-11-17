@@ -1,0 +1,9 @@
+{
+  "description-of-this-file": "This configuration file provides runtime parameters, environment identifiers, and regional resource mappings for the Agentic Solution Engineer. Update these values for each target environment. NEVER hardcode these variables in source code, prompts, or specifications.",
+  "environment": "dev",
+  "project-id": "YOUR_PROJECT_ID",
+  "region": "us-central1",
+  "database-name": "solution_database",
+  "storage-bucket": "solution-data-bucket-YOUR_PROJECT_ID",
+  "service-identity": "service-runner@YOUR_PROJECT_ID.local"
+}

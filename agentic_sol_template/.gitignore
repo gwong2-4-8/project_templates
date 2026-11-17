@@ -1,0 +1,86 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Environment & Credentials (NEVER commit secrets)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.pkcs12
+id_rsa*
+credentials.json
+service-account*.json
+key-file-*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Frontend (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Infrastructure as Code (Terraform / OpenTofu)
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+tf-output.json
+*.log
+
+# IDE & Editor Files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+
+# Temporary & Build Dirs
+tmp/
+temp/
+
+# Graphify / Architecture Visualizer Caches
+graphify-out/cache/*
+graphify-out/.graphify_*
+graphify-out/cost.json
+graphify-out/manifest.json

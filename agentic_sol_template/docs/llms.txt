@@ -1,0 +1,22 @@
+# Solution Architecture & Data Plane Specifications
+
+## 1. Solution Overview
+- **Solution Name:** [REPLACE_ME_SOLUTION_NAME]
+- **Target Environment:** Configured dynamically via `agent-config.json` (`environment`, `project-id`)
+- **Primary Regions:** Configured dynamically via `agent-config.json` (`region`)
+
+## 2. Architecture & Data Plane Topology
+- **Storage & Ingestion:**
+  * Object Storage: Storage buckets defined in `agent-config.json` (`storage-bucket`)
+  * Messaging / Streaming: Message queues and event stream topics for asynchronous communication
+  * Data Store / Database: Database defined in `agent-config.json` (`database-name`)
+- **Analytics & Processing:**
+  * Data processing pipelines in `src/pipelines/`
+  * Database migrations, schemas, and queries in `src/scripts/`
+- **Application Services & Serving:**
+  * Containerized services and APIs in `src/app/`
+  * Zero-Trust authentication and endpoint authorization enforced
+  * Secrets managed strictly via dedicated secret managers/vaults (never in source code)
+
+## 3. Schema Contracts & Component Interfaces
+- Define table schemas, JSON payloads, and API contracts here before implementing features in `src/`.
